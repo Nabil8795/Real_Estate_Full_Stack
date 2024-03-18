@@ -6,7 +6,10 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.index, name = 'index'),
+    path('', views.SignupPage, name = 'signup'),
+    path('login', views.LoginPage, name = 'login'),
+    path('logout', views.LogoutPage, name = 'logout'),
+    path('index', views.index, name = 'index'),
     path('view_all_prop', views.all_prop, name = 'all_prop'),
     path('add_prop', views.add_prop, name = 'add_prop'),
     path('remove_prop', views.remove_prop, name = 'remove_prop'),
